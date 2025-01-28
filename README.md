@@ -1,36 +1,43 @@
-# derpify
+# 1337translate
 
-![Derpify.js logo showing the Spongebob clucking like a chicken meme](derpifyjs.png)
-
-This is a package that "derpifies" strings by randomly changing upper- and lowercase.
+This is a package that translates strings from and to 1337speek.
 
 For example:
 
 ```javascript
 console.log(
-    derpify('All he wanted to say was I love you all.')
+    leettranslate.toleet('Hello, boys, girls and others!')
 )
 ```
 
-Will return as one example (as it is random):
+Will return:
 
-`ALL hE WANTed to SAY WAS I lOVe YoU AlL.`
+H3110, 80y5, 9!r15 4nd 07h3r5!
 
-You call the functionality with the `derpify` method, which takes two parameters:
+You can also set a 'light' mode that will not replace 'b','g','i' and 'z':
 
-* `str` - the string to split (mandatory).
-* `randomness` - an float between 0 and 1, preset to 0.3 (optional).
+```javascript
+console.log(
+    leettranslate.toleet('Hello, boys, girls and others!', true)
+)
+```
 
-You can try derpify's outcome using the [demo page](https://codepo8.github.io/derpify/demo.html) or `demo.js` on the commmand line.
+returns 
+
+H3110, b0y5, gir15 4nd 07h3r5!
+
+The other way around works, too:
+
+
+You call the functionality with the `translate.toleet()` and `translate.totext()` methods, each taking parameters:
+
+* `text` - the text to translate (mandatory)
+* `light` - an Boolean to turn on light mode - pre-set to false (optional)
+
+You can try it by calling `demo.js` on the commmand line.
 
 Use it via npm:
 
 ```
-npm -i derpify
-```
-
-Or the client-side package via unpkg
-
-```HTML
-<script src="https://unpkg.com/trimmiddle@0.1.0/derpify.js"></script>
+npm -i leetranslate
 ```
