@@ -28,6 +28,14 @@ H3110, b0y5, gir15 4nd 07h3r5!
 
 The other way around works, too:
 
+```javascript
+console.log(
+    leettranslate.totext('H3ll0, w0rld!', true)
+);
+```
+returns 
+
+Hello, world!
 
 You call the functionality with the `translate.toleet()` and `translate.totext()` methods, each taking parameters:
 
