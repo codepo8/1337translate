@@ -1,0 +1,25 @@
+{
+  "name": "leettranslate",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "description": "Converts texts from and to leetspeak to hack LLMs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codepo8/1337translate.git"
+  },
+  "keywords": [
+    "string",
+    "LLM",
+    "leetspeak"
+  ],
+  "author": "codepo8",
+  "bugs": {
+    "url": "https://github.com/codepo8/1337translate/issues"
+  },
+  "homepage": "https://github.com/codepo8/1337translate#readme"
+}
