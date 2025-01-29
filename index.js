@@ -19,8 +19,8 @@ leettranslate.lightmap = {
 	'a': '4',
 	's': '5',
 };
-leettranslate.toleet = (text, light) =>{
-	let map = light ? leettranslate.lightmap : leettranslate.fullmap;
+leettranslate.toleet = (text, modes={light:false}) =>{
+	let map = modes.light ? leettranslate.lightmap : leettranslate.fullmap;
 	return text.split('').map(char => {
 		if (map[char.toLowerCase()]) {
 			return map[char.toLowerCase()];
@@ -28,8 +28,8 @@ leettranslate.toleet = (text, light) =>{
 		return char;
 	}).join('');
 }   
-leettranslate.totext = (text, light = false) => {
-	let map = light ? leettranslate.lightmap : leettranslate.fullmap;
+leettranslate.totext = (text, modes={light:false}) => {
+	let map = modes.light ? leettranslate.lightmap : leettranslate.fullmap;
 	return text.split('').map(char => {
 		for (let key in map) {
 			if (map[key] === char) {
